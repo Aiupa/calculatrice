@@ -1,26 +1,37 @@
-let button = document.getElementsByClassName("buttons");
-console.log(button);
+let input = "";
 
-for (let i = 0; i < button.length; i++) {
-  button[i].addEventListener("click", showValue);
+let buttons = document.getElementsByClassName("button");
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", showValue);
 }
 
-let reset = document.getElementsByClassName("clear");
-reset.addEventListener("click", remove);
+let clear = document.getElementById("reset");
+clear.addEventListener("click", reset);
 
-let equal = document.getElementsByClassName("egal");
-equal.addEventListener("click", doMath);
+let skip = document.getElementById("remove");
+skip.addEventListener("click", remove);
+
+let equal = document.getElementById("result");
+equal.addEventListener("click", domaths);
 
 function showValue() {
   input = input + this.value;
-  document.getElementsByClassName("answer").innerHTML = input;
+
+  document.getElementById("output").innerHTML = input;
 }
 
-function doMath() {
-  document.getElementsByClassName("answer").innerHTML = eval(input);
+function domaths() {
+  document.getElementById("output").innerHTML = eval(input);
+  input = eval(input);
+}
+
+function reset() {
+  document.getElementById("output").innerHTML = " ";
+  input = "";
 }
 
 function remove() {
-  document.getElementsByClassName("answer").innerHTML = "Wanna try again ?";
-  input = "";
+  input = input.replace(input.slice(-1), "");
+  document.getElementById("output").innerHTML = input;
 }
