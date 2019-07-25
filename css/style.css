@@ -1,23 +1,19 @@
-.operation, .chiffre, .reset{
+.buttons, .clear {
     width: 5rem;
     height: 3rem;
 }
-
-.operation, .chiffre{
+.egal {
+    width: 10rem;
+    height: 3rem;
+}
+.buttons, .egal, .clear{
     background-color: darkgrey;
     color: black;
 }
-.reset{
-    background-color: orangered;
+.answer{
+    width: 20rem;
+    height: 2rem;
 }
-
-.egal {
-    width:10rem;
-    height: 3rem;
-    background-color: black;
-    color: white;
-}
-
 div {
     display: flex;
     justify-content: center;
