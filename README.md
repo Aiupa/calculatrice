@@ -1,6 +1,4 @@
 # calculatrice
-Premier exercice calculatrice en JS. Sans form, sans table, sans onclick. Je te déteste, JB.
-
-Ceci est ma troisième calculatrice, mais la première sans onClick. Je pense que c'est améliorable mais je manque de pratique et possiblement, de connaissance.
-
-Ce sera amélioré durant la fin de semaine. 
+Petite calculatrice en JavaScript afin de m'exercer. 
+Il est possible de faire des calculs avec le pad numérique. 
+Le reset est sur la touche C, le remove sur la touche backspace et le résultat sur la touche entrée du pad numérique.
